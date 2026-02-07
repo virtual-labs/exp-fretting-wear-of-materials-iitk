@@ -406,6 +406,10 @@ svgContainer.style.transition="1s ease all"
   heading.innerText = '3-Dimentional view'
   btnarray[marker].style.display='block';
 marker++;
+
+document.getElementById("resultBtn").style.display = "block";
+document.getElementById("conclusionBtn").style.display = "block";
+
 }
 
 
@@ -550,3 +554,94 @@ forceInput.addEventListener("input", validateInputs);
 timeInput.addEventListener("input", validateInputs);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function showMaterialOptions() {
+  // Show material options box
+  document.getElementById("materialOptions").style.display = "block";
+
+  // Hide next button initially
+  document.getElementById("performIndentBtn").style.display = "none";
+
+  // Reset radio buttons & enable both
+  const ms = document.getElementById("msRadio");
+  const al = document.getElementById("alRadio");
+
+  ms.checked = false;
+  al.checked = false;
+
+  ms.disabled = false;
+  al.disabled = false;
+}
+
+function materialSelected(selected) {
+  const ms = document.getElementById("msRadio");
+  const al = document.getElementById("alRadio");
+  const nextBtn = document.getElementById("performIndentBtn");
+
+  // Show next button once material selected
+  nextBtn.style.display = "block";
+
+  if (selected === "ms") {
+    al.disabled = true;  // block alumina
+    ms.disabled = false;
+  }
+
+  if (selected === "al") {
+    ms.disabled = true;  // block mild steel
+    al.disabled = false;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function showResult() {
+  const modal = document.getElementById("resultModal");
+  modal.style.display = "flex";
+}
+
+function closeResult() {
+  const modal = document.getElementById("resultModal");
+  modal.style.display = "none";
+}
+
+
+
+
+
+
+
+function showConclusion() {
+  document.getElementById("conclusionModal").style.display = "flex";
+}
+function closeConclusion() {
+  document.getElementById("conclusionModal").style.display = "none";
+}

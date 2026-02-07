@@ -41,11 +41,31 @@
 
   <!-- Controls -->
   <aside class="controls">
-    <h3>Control Panel</h3>
+    <!-- Materials Button -->
+<button class="primary" onclick="showMaterialOptions()">
+  Materials
+</button>
 
-    <button class="primary" id="textarea" onclick="textar()">
+<!-- Material Selection Box -->
+<div id="materialOptions" style="display:none; margin-top:10px; padding:10px; border:1px solid #ccc; border-radius:6px;">
+  <h4>Select Material</h4>
+
+  <label style="display:block; margin-bottom:6px;">
+    <input type="radio" name="material" value="Mild Steel" id="msRadio" onclick="materialSelected('ms')">
+    Mild Steel
+  </label>
+
+  <label style="display:block; margin-bottom:6px;">
+    <input type="radio" name="material" value="Alumina" id="alRadio" onclick="materialSelected('al')">
+    Alumina
+  </label>
+</div>
+
+<!-- Perform Indentation Button -->
+<button class="primary" id="performIndentBtn" onclick="textar()" style="display:none;">
   Perform Indentation Test
 </button>
+
 
 <div id="indentPanel" class="indent-panel">
 
@@ -78,6 +98,15 @@
     <!-- <button class="primary" id="reset" onclick="moveup('./base2-1.png')">Remove load</button> -->
     <button class="primary"  id="display3d" onclick="display3d()">Three Dimentional View</button>
     <button class="primary"  id="formula" onclick="showformula()">Formulae Use</button>
+    <button class="primary" id="resultBtn" onclick="showResult()" style="display:none;">
+  Result
+</button>
+
+<button class="primary" id="conclusionBtn" onclick="showConclusion()" style="display:none;">
+  Conclusion
+</button>
+
+
     
 
 
@@ -339,68 +368,105 @@ stroke="#ffffff" marker-end="url(#arrow)"/>
 
 <div class="formula-content">
 
-<p><b>Contact Depth</b></p>
-<div class="formula">
-  h<sub>c</sub>
-  <span class="eq">=</span>
-  h<sub>max</sub>
-  <span class="eq">−</span>
-  ε
-  <span class="frac">
-    <span>P</span>
-    <span>S</span>
-  </span>
-</div>
-<p>
-<b>h<sub>max</sub></b> = maximum indentation depth,  
-<b>P</b> = maximum load,  
-<b>S</b> = unloading stiffness,  
-<b>ε ≈ 0.75</b> (Berkovich indenter)
-</p>
+  <p><b>Contact Depth</b></p>
+
+  <div class="formula">
+    <span>h<sub>c</sub></span>
+    <span class="eq">=</span>
+    <span>h<sub>max</sub></span>
+    <span class="eq">−</span>
+    <span>ε</span>
+    <span class="frac">
+      <span>P</span>
+      <span>S</span>
+    </span>
+  </div>
+  
+  <p>
+  <b>h<sub>max</sub></b> = maximum indentation depth,  
+  <b>P</b> = maximum load,  
+  <b>S</b> = unloading stiffness,  
+  <b>ε ≈ 0.75</b> (Berkovich indenter)
+  </p>
+  
+  <hr>
+  
 
 <hr>
 
-<p><b>Projected Contact Area</b></p>
-<div class="formula">
-  A
-  <span class="eq">=</span>
-  f(h<sub>c</sub>)
-</div>
-<p>Area function depends on indenter geometry.</p>
 
-<hr>
-
-<p><b>Hardness</b></p>
+<p><b>Hardness Measurement</b></p>
 <div class="formula">
   H
   <span class="eq">=</span>
   <span class="frac">
-    <span>P</span>
-    <span>A</span>
+    <span>P<sub>max</sub></span>
+    <span>A<sub>c</sub></span>
   </span>
 </div>
-<p>Ratio of maximum load to projected contact area.</p>
+
+<p>
+<b>H</b> = nanoindentation hardness,  
+<b>P<sub>max</sub></b> = maximum applied load,  
+<b>A<sub>c</sub></b> = projected contact area
+</p>
 
 <hr>
 
-<p><b>Elastic Modulus</b></p>
+
+
+<p><b>Elastic Modulus Determination</b></p>
+
 <div class="formula">
-  E
+  E<sub>r</sub>
+  <span class="eq">=</span>
+
+  <span class="frac">
+    <span>1</span>
+    <span>2β</span>
+  </span>
+
+  √(π / A<sub>c</sub>) S
+</div>
+
+<p>
+<b>β</b> = geometry correction factor (≈ 1.034 for Berkovich)
+</p>
+
+
+
+
+
+<hr>
+
+
+<p><b>Specimen Modulus</b></p>
+
+<div class="formula">
+  <span class="frac">
+    <span>1</span>
+    <span>E<sub>r</sub></span>
+  </span>
   <span class="eq">=</span>
   <span class="frac">
-    <span>√π</span>
-    <span>2</span>
+    <span>1 − ν<sub>s</sub><sup>2</sup></span>
+    <span>E<sub>s</sub></span>
   </span>
-  <span class="eq">·</span>
+  <span class="eq">+</span>
   <span class="frac">
-    <span>S</span>
-    <span>√A</span>
+    <span>1 − ν<sub>i</sub><sup>2</sup></span>
+    <span>E<sub>i</sub></span>
   </span>
 </div>
 
-      <p>
-        Calculated using unloading stiffness method.
-      </p>
+<p>
+<b>E<sub>s</sub>, ν<sub>s</sub></b> = modulus and Poisson’s ratio of the specimen, <br>
+<b>E<sub>i</sub>, ν<sub>i</sub></b> = modulus and Poisson’s ratio of the indenter  
+(for diamond: E<sub>i</sub> ≈ 1140 GPa, ν<sub>i</sub> ≈ 0.07)
+</p>
+
+<hr>
+
 
     </div>
   </div>
@@ -429,6 +495,114 @@ stroke="#ffffff" marker-end="url(#arrow)"/>
     </form>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<!-- RESULT POPUP -->
+<div id="resultModal" class="formula-modal result-modal" style="display:none;">
+  <div class="formula-box">
+    <span class="close-btn" onclick="closeResult()">✖</span>
+    <h3>Result Table</h3>
+
+    <div class="formula-content">
+      <!-- CLEAN TABLE -->
+      <table class="result-table">
+        <tr>
+          <th>Property</th>
+          <th>Mild Steel</th>
+          <th>Alumina</th>
+          <th>Relative Trend</th>
+        </tr>
+
+        <tr>
+          <td>Maximum depth h<sub>max</sub> (nm)</td>
+          <td>800</td>
+          <td>210</td>
+          <td>Alumina ↓ (≈4× smaller)</td>
+        </tr>
+
+        <tr>
+          <td>Contact stiffness S (mN/nm)</td>
+          <td>0.15</td>
+          <td>0.48</td>
+          <td>Alumina ↑</td>
+        </tr>
+
+        <tr>
+          <td>Hardness H (GPa)</td>
+          <td>2</td>
+          <td>18</td>
+          <td>↑</td>
+        </tr>
+
+        <tr>
+          <td>Elastic modulus E (GPa)</td>
+          <td>210</td>
+          <td>380</td>
+          <td>↑</td>
+        </tr>
+
+        <tr>
+          <td>H/E (–)</td>
+          <td>0.0095</td>
+          <td>0.047</td>
+          <td>≈5× higher</td>
+        </tr>
+
+        <tr>
+          <td>H³/E² (GPa)</td>
+          <td>1.8 × 10⁻⁴</td>
+          <td>4.0 × 10⁻²</td>
+          <td>≈225× higher</td>
+        </tr>
+
+        <tr>
+          <td>Expected wear resistance</td>
+          <td>Low</td>
+          <td>Very high</td>
+          <td>Alumina superior</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- CONCLUSION POPUP -->
+<div id="conclusionModal" class="formula-modal conclusion-modal" style="display:none;">
+  <div class="formula-box">
+    <span class="close-btn" onclick="closeConclusion()">✖</span>
+    <h3>Conclusion</h3>
+
+    <div class="conclusion-content">
+      <p>
+        Under the same applied load, mild steel shows a much deeper indentation than alumina, indicating lower hardness and greater plastic deformation, which makes it more prone to wear.
+      </p>
+      <p>
+        Alumina exhibits higher hardness and modulus along with a larger H/E ratio, leading to greater elastic recovery and reduced permanent surface damage during contact.
+      </p>
+      <p>
+        The significantly higher H³/E² value of alumina reflects strong resistance to plastic flow and ploughing, thereby minimizing material removal and debris formation.
+      </p>
+      <p>
+        Overall, nanoindentation results clearly predict that alumina will have substantially better wear resistance than mild steel, demonstrating how indentation-derived parameters can be used to estimate tribological performance.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
 <script src="./js/main.js"></script>
 
 
