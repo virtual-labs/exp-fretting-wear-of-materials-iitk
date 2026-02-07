@@ -698,12 +698,7 @@ top: 5%;
     padding-bottom: 2px;
 }
 
-.formula .frac span:last-child {
-    border-top: 2px solid #111;
-    padding-top: 2px;
-    min-width: 1.2em;
-    text-align: center;
-}
+
 
 /* Equals & operators */
 .formula .eq {
@@ -712,6 +707,21 @@ top: 5%;
 }
 
 
+.sqrt{
+  display:inline-flex;
+  align-items:flex-start;
+}
+
+.sqrt .root{
+  font-size:1.2em;
+  line-height:1;
+}
+
+.sqrt .radicand{
+  border-top:2px solid #000;
+  padding:2px 4px 0 4px;
+  margin-left:2px;
+}
 
 
 
@@ -775,4 +785,163 @@ top: 5%;
   font-size: 15px;
   border-radius: 10px ;
 
+}
+
+
+
+
+
+
+/* PROFESSIONAL RESULT TABLE */
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #1e2127;
+  border: 1px solid #4a4d57;
+  font-size: 15px;
+  color: #e2e2e2;
+}
+
+/* Header Row */
+.result-table th {
+  background: #2a2e36;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #4a4d57;
+  font-weight: 600;
+}
+
+/* Data Rows */
+.result-table td {
+  padding: 10px 12px;
+  border: 1px solid #4a4d57;
+  background: #23262d;
+}
+
+/* Alternate Row Striping */
+.result-table tr:nth-child(even) td {
+  background: #20232a;
+}
+
+/* Hover Highlight */
+.result-table tr:hover td {
+  background: #2d313a;
+  transition: 0.2s ease-in-out;
+}
+
+/* First column bold */
+.result-table td:first-child {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.material-box {
+  background: #ffffff;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.mat-option {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONCLUSION POPUP – CLEAN SCIENTIFIC STYLE */
+.conclusion-modal .formula-box {
+  background: #ffffff;
+  color: #222;
+  border: 2px solid #d7d7d7;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+/* Header */
+.conclusion-modal h3 {
+  background: #f0f0f0;
+  padding: 12px 18px;
+  margin: -20px -20px 20px -20px;
+  border-bottom: 1px solid #d0d0d0;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  letter-spacing: 0.5px;
+}
+
+/* The conclusion text area */
+.conclusion-content {
+  padding: 5px 10px 20px 10px;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Paragraph styling */
+.conclusion-content p {
+  background: #f8faff;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border-left: 5px solid #4a90e2;
+  box-shadow: 0 0 5px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.conclusion-content p:hover {
+  background: #f1f6ff;
+}
+.formula {
+  font-size: 22px;
+}
+
+.frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frac > span:first-child {
+  border-bottom: 2px solid #000;   /* single fraction line */
+  padding: 0 4px 2px 4px;
+}
+
+.frac > span:last-child {
+  padding-top: 2px;
+}
+
+/* FIX: prevent nested fraction extra lines */
+.frac .frac > span:first-child {
+  border-bottom: none;
 }
