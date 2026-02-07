@@ -2,37 +2,71 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A material shows a high value of H/E. This primarily indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "High plastic deformation",
+        "b": "High elastic recovery",
+        "c": "High thermal conductivity",
+        "d": "High surface roughness"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect: High plastic deformation corresponds to low H/E.",
+        "b": "Correct: High H/E indicates greater elastic recovery and resistance to crack initiation.",
+        "c": "Incorrect: H/E is unrelated to thermal properties.",
+        "d": "Incorrect: H/E has no relation to surface roughness."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the unloading stiffness S increases while all other parameters remain constant, the calculated modulus will:",
+      "answers": {
+        "a": "Decrease",
+        "b": "Increase",
+        "c": "Remain unchanged",
+        "d": "Become zero"
+      },
+      "explanations": {
+        "a": "Incorrect: Higher stiffness means higher modulus.",
+        "b": "Correct: E<sub>r</sub> ∝ S. Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
+        "c": "Incorrect: Stiffness directly influences modulus.",
+        "d": "Incorrect: Modulus cannot become zero when there is measurable stiffness."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Two materials have the same hardness. Material A has lower modulus than Material B. Which will likely show better wear resistance?",
+      "answers": {
+        "a": "Material A",
+        "b": "Material B",
+        "c": "Both same",
+        "d": "Cannot be predicted"
+      },
+      "explanations": {
+        "a": "Correct: Lower modulus indicates higher  H/E and H³/E², Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
+        "b": "Incorrect: Higher modulus leads to lower elastic recovery, making it more prone to wear.",
+        "c": "Incorrect: Their wear resistance will differ based on modulus.",
+        "d": "Incorrect: Prediction is possible from H/E and H³/E² ratios."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which parameter is most directly related to resistance against plastic ploughing during sliding wear?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Elastic modulus E",
+        "b": "Maximum load Pmax",
+        "c": "Contact depth hc",
+        "d": "H³/E²"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect: Modulus alone does not determine ploughing resistance.",
+        "b": "Incorrect: Load is only experimental input, not a material property.",
+        "c": "Incorrect: Contact depth is an indentation geometry parameter.",
+        "d": "Correct: H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
