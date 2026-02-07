@@ -27,102 +27,108 @@ The deepest penetration reached during loading is denoted as the maximum depth, 
 
 <img src="images/Picture2.png" width="500">
 
-Figure 2: (a) The load vs displacement (p-h) curve indicating loading, hold and unloading stages during a typical nanoindentation experiment. (b) A schematic demonstrating $h_{\text{max}},\ h_c,\ A_c$
+Figure 2: (a) The load vs displacement (p-h) curve indicating loading, hold and unloading stages during a typical nanoindentation experiment. (b) A schematic demonstrating h<sub>max</sub>, h<sub>c</sub>, A<sub>c</sub>
+
 
 
 ## Contact Mechanics and Depth Parameters
 To extract meaningful properties, it is necessary to distinguish between different measures of indentation depth.
-	h_max: maximum penetration depth at peak load
-	h_c: contact depth, representing the actual depth of contact between the indenter and the material
+
+- h<sub>max</sub>: maximum penetration depth at peak load  
+- h<sub>c</sub>: contact depth, representing the actual depth of contact between the indenter and the material  
+
 The contact depth is calculated as:
-$$
-h_c = h_{\text{max}} - \varepsilon \frac{P_{\text{max}}}{S}
-$$
+
+h<sub>c</sub> = h<sub>max</sub> − ε (P<sub>max</sub> / S)
+
+
 
 
 Where, Where,
 
-- $P_{\text{max}}$ = maximum applied load  
-- $S = \left(\dfrac{dP}{dh}\right)_{\text{unload}}$ = unloading stiffness (slope of the initial unloading curve)  
-- $\varepsilon$ = geometric constant depending on indenter shape (≈ 0.75 for Berkovich)
+- P<sub>max</sub> = maximum applied load  
+- S = (dP/dh)<sub>unload</sub> = unloading stiffness (slope of the initial unloading curve)  
+- ε = geometric constant depending on indenter shape (≈ 0.75 for Berkovich)
 
-Assumption:
+<b>Assumption:</b>  
 The initial unloading response is purely elastic and follows linear elastic contact mechanics.
 
 
 ### Projected Contact Area
-The projected contact area A_cis the area of material actually in contact with the indenter at peak load.
-For an ideal Berkovich indenter: 
-$$
-A_c = 24.5\, h_c^2
-$$
+The projected contact area A<sub>c</sub> is the area of material actually in contact with the indenter at peak load.
+
+For an ideal Berkovich indenter:
+
+A<sub>c</sub> = 24.5 h<sub>c</sub><sup>2</sup>
+
 
 In practice, tip rounding and imperfections cause deviations from the ideal geometry. Therefore, an experimentally calibrated area function is often used:
-$$
-A_c = C_0 h_c^2 + C_1 h_c + C_2 h_c^{1/2} + \cdots
-$$
 
-where $C_0, C_1, C_2$
-are calibration constants obtained using a reference material.
-It is important to note that the surface must be smooth and homogeneous over the indentation region for getting better results.
+A<sub>c</sub> = C<sub>0</sub> h<sub>c</sub><sup>2</sup> + C<sub>1</sub> h<sub>c</sub> + C<sub>2</sub> h<sub>c</sub><sup>1/2</sup> + …
+
+where C<sub>0</sub>, C<sub>1</sub>, C<sub>2</sub> are calibration constants obtained using a reference material.
+
+It is important to note that the surface must be smooth and homogeneous over the indentation region for getting better results
+
 ### Hardness Measurement
 Hardness is defined as the mean contact pressure under the indenter at maximum load:
-$$
-H = \frac{P_{\text{max}}}{A_c}
-$$
 
+H = P<sub>max</sub> / A<sub>c</sub>
 
-Where, Where:
+Where:
 
-- $H$ = nanoindentation hardness  
-- $P_{\text{max}}$ = maximum applied load  
-- $A_c$ = projected contact area
+- H = nanoindentation hardness  
+- P<sub>max</sub> = maximum applied load  
+- A<sub>c</sub> = projected contact area  
 
 Physically, hardness represents the material’s resistance to permanent (plastic) deformation during localized contact.
-### Elastic Modulus Determination
-Reduced Modulus
-The slope of the initial unloading curve gives the contact stiffness S. From this, the reduced modulus Reduced modulus $E_r$ is obtained as:
 
-$$
-E_r = \frac{1}{2\beta}\sqrt{\frac{\pi}{A_c}} \, S
-$$
+<h3>Elastic Modulus Determination</h3>
 
+<b>Reduced Modulus</b>
 
-Where, β= geometry correction factor (≈ 1.034 for Berkovich)
+The slope of the initial unloading curve gives the contact stiffness S. From this, the reduced modulus E<sub>r</sub> is obtained as:
+
+E<sub>r</sub> = (1 / 2β) √(π / A<sub>c</sub>) S
+
+Where, β = geometry correction factor (≈ 1.034 for Berkovich).  
 The reduced modulus accounts for elastic deformation in both the indenter and the specimen.
 
-### Specimen Modulus
-The true elastic modulus of the specimen $E_s$ is calculated using:
+<h3>Specimen Modulus</h3>
 
-$$
-\frac{1}{E_r} = \frac{1-\nu_s^2}{E_s} + \frac{1-\nu_i^2}{E_i}
-$$
+The true elastic modulus of the specimen E<sub>s</sub> is calculated using:
 
+1 / E<sub>r</sub> = (1 − ν<sub>s</sub><sup>2</sup>) / E<sub>s</sub> + (1 − ν<sub>i</sub><sup>2</sup>) / E<sub>i</sub>
 
-Where,
+Where:
 
-- $E_s, \nu_s$ = modulus and Poisson’s ratio of the specimen  
-- $E_i, \nu_i$ = modulus and Poisson’s ratio of the indenter  
-  (for diamond: $E_i \approx 1140 \text{ GPa},\ \nu_i \approx 0.07$)
+- E<sub>s</sub>, ν<sub>s</sub> = modulus and Poisson’s ratio of the specimen  
+- E<sub>i</sub>, ν<sub>i</sub> = modulus and Poisson’s ratio of the indenter  
+  (for diamond: E<sub>i</sub> ≈ 1140 GPa, ν<sub>i</sub> ≈ 0.07)
 
-Assumptions:
+<b>Assumptions:</b>  
 The material behaves as a linear elastic, isotropic solid during unloading and the Poisson’s ratio is known.
 
-### Correlation Between Mechanical Properties and Wear Resistance
+<h3>Correlation Between Mechanical Properties and Wear Resistance</h3>
+
 Wear during sliding or abrasive contact can be viewed as a sequence of repeated microscopic indentations caused by surface asperities. At each contact, the material either deforms elastically and recovers or undergoes permanent plastic deformation that leads to grooves, cracks, and debris formation. Consequently, wear resistance depends on the balance between elastic recovery and plastic damage.
-Nanoindentation provides two useful dimensionless parameters that capture this balance:
-#### Elastic strain to failure indicator: $H/E$
+
+Nanoindentation provides two useful parameters that capture this balance:
+
+<h4>Elastic strain to failure indicator: H/E</h4>
 
 This ratio represents the elastic strain a material can sustain before yielding. Higher values indicate greater elastic recovery, smaller residual impressions, and improved resistance to crack initiation and fatigue wear.
-#### Plastic deformation resistance index: $H^3/E^2$
+
+<h4>Plastic deformation resistance index: H<sup>3</sup>/E<sup>2</sup></h4>
 
 This parameter reflects resistance to irreversible plastic flow and is related to the size of the plastic zone beneath the contact. Larger values correspond to reduced ploughing, less pile-up, and lower material removal.
 
-Materials that exhibit high values of both $H/E$ (dimensionless) and $\dfrac{H^3}{E^2}$ (GPa) generally demonstrate superior wear performance. These ratios are particularly useful for coatings and thin films, where rapid screening of tribological behavior is required without conducting extensive wear tests.
+Materials that exhibit high values of both H/E (dimensionless) and H<sup>3</sup>/E<sup>2</sup> (GPa) generally demonstrate superior wear performance. These ratios are particularly useful for coatings and thin films, where rapid screening of tribological behavior is required without conducting extensive wear tests.
 
-### Limitations
+<h3>Limitations</h3>
 
 Although these parameters provide valuable insight into wear behavior, they are indirect indicators. Actual wear performance also depends on factors such as environment, surface roughness, microstructure, and contact conditions. Therefore, nanoindentation results should be interpreted alongside dedicated tribological testing.
+
 
 
 
