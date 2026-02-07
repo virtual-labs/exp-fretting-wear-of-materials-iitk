@@ -23,7 +23,7 @@ The indenter penetrates the surface as the load increases. Both elastic and plas
 The load is maintained at its maximum value to study time-dependent deformation such as creep or viscoelastic effects.
 ##### Unloading stage:
 The load is gradually removed. The initial part of this segment is assumed to be primarily elastic and is used to determine the elastic stiffness of the material.
-The deepest penetration reached during loading is denoted as the maximum depth, h_max.
+The deepest penetration reached during loading is denoted as the maximum depth, h<sub>max</sub>.
 
 <img src="images/Picture2.png" width="500">
 
