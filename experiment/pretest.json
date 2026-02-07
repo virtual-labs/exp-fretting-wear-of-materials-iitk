@@ -1,39 +1,70 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "What is the primary quantity directly recorded during a nanoindentation experiment?",
+    "answers": {
+      "a": "Residual indent diameter",
+      "b": "Surface roughness",
+      "c": "Load and penetration depth",
+      "d": "Wear volume"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "c",
+    "explanations": {
+      "a": "Incorrect: Residual indent size is used in macro hardness tests, not nanoindentation.",
+      "b": "Incorrect: Surface roughness affects results but is not recorded.",
+      "c": "Correct: Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+      "d": "Incorrect: Wear volume is unrelated to the nanoindentation process."
+    },
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Which part of the load–displacement curve is mainly used to calculate the elastic modulus?",
+    "answers": {
+      "a": "Entire loading curve",
+      "b": "Hold segment",
+      "c": "Initial unloading slope",
+      "d": "Final residual depth"
+    },
+    "correctAnswer": "c",
+    "explanations": {
+      "a": "Incorrect: The loading curve includes plastic deformation.",
+      "b": "Incorrect: Hold segment is for creep/viscoelastic effects.",
+      "c": "Correct: The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+      "d": "Incorrect: Residual depth relates to plastic deformation, not modulus."
+    },
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Nanoindentation hardness is defined as:",
+    "answers": {
+      "a": "Load divided by indentation depth",
+      "b": "Load divided by projected contact area",
+      "c": "Depth divided by load",
+      "d": "Stiffness divided by load"
+    },
+    "correctAnswer": "b",
+    "explanations": {
+      "a": "Incorrect: Depth does not determine hardness.",
+      "b": "Correct:Hardness is the mean contact pressure under the indenter, H=P_max/A_c . It represents resistance to plastic deformation.",
+      "c": "Incorrect: This ratio has no physical meaning.",
+      "d": "Incorrect: Stiffness is used for modulus, not hardness."
+    },
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Why is nanoindentation particularly useful for thin films and coatings?",
+    "answers": {
+      "a": "It requires large samples",
+      "b": "It measures only elastic behavior",
+      "c": "It allows very shallow, localized testing",
+      "d": "It produces large visible indents"
+    },
+    "correctAnswer": "c",
+    "explanations": {
+      "a": "Incorrect: Very small samples can be tested.",
+      "b": "Incorrect: It measures both elastic and plastic properties.",
+      "c": "Correct: Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+      "d": "Incorrect: Indents are extremely small and usually invisible."
+    },
+    "difficulty": "beginner"
+  }
+]
