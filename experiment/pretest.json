@@ -10,10 +10,10 @@
         "d": "High surface roughness"
       },
       "explanations": {
-        "a": "<a href='www.google.com'>Incorrect: High plastic deformation corresponds to low H/E.</a>",
-        "b": "<a href='www.google.com'>Correct: High H/E indicates greater elastic recovery and resistance to crack initiation.</a>",
-        "c": "<a href='www.google.com'>Incorrect: H/E is unrelated to thermal properties.</a>",
-        "d": "<a href='www.google.com'>Incorrect: H/E has no relation to surface roughness.</a>"
+        "a": "Incorrect: High plastic deformation corresponds to low H/E.",
+        "b": "Correct: High H/E indicates greater elastic recovery and resistance to crack initiation.",
+        "c": "Incorrect: H/E is unrelated to thermal properties.",
+        "d": "Incorrect: H/E has no relation to surface roughness."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "Become zero"
       },
       "explanations": {
-        "a": "<a href='www.google.com'>Incorrect: Higher stiffness means higher modulus.</a>",
-        "b": "<a href='www.google.com'>Correct: E<sub>r</sub> ∝ S. Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.</a>",
-        "c": "<a href='www.google.com'>Incorrect: Stiffness directly influences modulus.</a>",
-        "d": "<a href='www.google.com'>Incorrect: Modulus cannot become zero when there is measurable stiffness.</a>"
+        "a": "Incorrect: Higher stiffness means higher modulus.",
+        "b": "Correct: E_r ∝ S. Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
+        "c": "Incorrect: Stiffness directly influences modulus.",
+        "d": "Incorrect: Modulus cannot become zero when there is measurable stiffness."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "Cannot be predicted"
       },
       "explanations": {
-        "a": "<a href='www.google.com'>Correct: Lower modulus indicates higher H/E and H³/E². Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.</a>",
-        "b": "<a href='www.google.com'>Incorrect: Higher modulus leads to lower elastic recovery, making it more prone to wear.</a>",
-        "c": "<a href='www.google.com'>Incorrect: Their wear resistance will differ based on modulus.</a>",
-        "d": "<a href='www.google.com'>Incorrect: Prediction is possible from H/E and H³/E² ratios.</a>"
+        "a": "Correct: Lower modulus indicates higher H/E and H³/E². Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
+        "b": "Incorrect: Higher modulus leads to lower elastic recovery, making it more prone to wear.",
+        "c": "Incorrect: Their wear resistance will differ based on modulus.",
+        "d": "Incorrect: Prediction is possible from H/E and H³/E² ratios."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "H³/E²"
       },
       "explanations": {
-        "a": "<a href='www.google.com'>Incorrect: Modulus alone does not determine ploughing resistance.</a>",
-        "b": "<a href='www.google.com'>Incorrect: Load is only an experimental input, not a material property.</a>",
-        "c": "<a href='www.google.com'>Incorrect: Contact depth is an indentation geometry parameter.</a>",
-        "d": "<a href='www.google.com'>Correct: H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear.</a>"
+        "a": "Incorrect: Modulus alone does not determine ploughing resistance.",
+        "b": "Incorrect: Load is only an experimental input, not a material property.",
+        "c": "Incorrect: Contact depth is an indentation geometry parameter.",
+        "d": "Correct: H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
