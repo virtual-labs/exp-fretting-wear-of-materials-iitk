@@ -787,7 +787,42 @@ top: 5%;
 
 }
 
+.result-table th,
+.result-table td {
+  white-space: nowrap;
+}
 
+/* Make first column wider */
+.result-table td:first-child,
+.result-table th:first-child {
+  width: 240px;        /* increase until text fits */
+}
+
+
+
+/* FIX RESULT POPUP WIDTH */
+.result-modal .formula-box {
+  width: 650px !important;
+  max-width: 95%;
+}
+
+/* FIX TABLE SO IT DOES NOT WRAP OR OVERFLOW */
+.result-table {
+  width: 100%;
+  table-layout: auto;
+}
+
+.result-table th,
+.result-table td {
+  white-space: nowrap;
+  padding: 10px 15px;
+}
+
+/* MAKE FIRST COLUMN WIDER */
+.result-table td:first-child,
+.result-table th:first-child {
+  width: 260px;
+}
 
 
 
@@ -801,6 +836,7 @@ top: 5%;
   border: 1px solid #4a4d57;
   font-size: 15px;
   color: #e2e2e2;
+  table-layout: auto;
 }
 
 /* Header Row */
