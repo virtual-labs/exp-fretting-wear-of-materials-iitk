@@ -1,38 +1,33 @@
 ## Essential Components of a Nanoindentation System
-A nanoindentation instrument is fundamentally designed to apply a precisely controlled force and simultaneously measure the resulting penetration depth with very high accuracy. Reliable property measurements depend primarily on a few core components that directly control contact mechanics and data acquisition.
-The indenter tip is the contacting element that penetrates the material surface. It is typically fabricated from diamond to ensure that the tip remains rigid and does not deform during testing. Common geometries such as Berkovich or spherical tips are selected based on the type of mechanical response being studied. The known geometry of the tip is critical because the projected contact area is calculated from it, which directly determines hardness and modulus values. We will be using diamond Berkovich tip for our experiments (Figure 1).
-The loading (force actuation) system applies the test load in a controlled and repeatable manner. It enables gradual loading, holding, and unloading cycles over micro-Newton to milli-Newton ranges. Accurate force control ensures stable indentation and prevents dynamic effects that could alter the measured response.
-The displacement measurement system records the penetration depth of the indenter into the sample with nanometer-scale resolution. Since nanoindentation properties are extracted from the load–displacement curve, precise depth sensing is essential for correctly separating elastic recovery from permanent deformation.
-The sample stage securely holds the specimen and provides fine positioning so that indentations can be placed at specific locations on the surface. Proper alignment between the indenter and the sample ensures consistent and reproducible contact conditions.
+A nanoindentation instrument is fundamentally designed to apply a precisely controlled force and simultaneously measure the resulting penetration depth with very high accuracy. Reliable property measurements depend primarily on a few core components that directly control contact mechanics and data acquisition.<br>
+The indenter tip is the contacting element that penetrates the material surface. It is typically fabricated from diamond to ensure that the tip remains rigid and does not deform during testing. Common geometries such as Berkovich or spherical tips are selected based on the type of mechanical response being studied. The known geometry of the tip is critical because the projected contact area is calculated from it, which directly determines hardness and modulus values. We will be using diamond Berkovich tip for our experiments (Figure 1).</br>
+The loading (force actuation) system applies the test load in a controlled and repeatable manner. It enables gradual loading, holding, and unloading cycles over micro-Newton to milli-Newton ranges. Accurate force control ensures stable indentation and prevents dynamic effects that could alter the measured response.<br>
+The displacement measurement system records the penetration depth of the indenter into the sample with nanometer-scale resolution. Since nanoindentation properties are extracted from the load–displacement curve, precise depth sensing is essential for correctly separating elastic recovery from permanent deformation.<br>
+The sample stage securely holds the specimen and provides fine positioning so that indentations can be placed at specific locations on the surface. Proper alignment between the indenter and the sample ensures consistent and reproducible contact conditions.<br>
 Finally, the data acquisition and analysis software continuously captures load and depth signals and processes them using established contact mechanics models to compute hardness, elastic modulus, and related parameters.
 
-<img src="images/Picture1.png" alt="Diamond Berkovich tip" width="500">
-
-Figure 1: Schematic of a Berkovich diamond indenter showing its three-sided pyramidal geometry with a total included angle of 142.3°, designed to provide the same projected area–depth relationship as a Vickers indenter. The sharp geometry enables well-defined contact mechanics and accurate determination of projected contact area, making it widely used for nanoindentation-based measurements of hardness and elastic modulus.
-
+<img src="images/Picture1.png" alt="Diamond Berkovich tip" width="500"><br>
+Figure 1: Schematic of a Berkovich diamond indenter showing its three-sided pyramidal geometry with a total included angle of 142.3°, designed to provide the same projected area–depth relationship as a Vickers indenter. The sharp geometry enables well-defined contact mechanics and accurate determination of projected contact area, making it widely used for nanoindentation-based measurements of hardness and elastic modulus.<br>
 
 ## Principle of Nanoindentation
-Nanoindentation is a depth-sensing mechanical testing technique in which a sharp diamond indenter (we are using Berkovich indenter) is pressed into the surface of a material while both the applied load and the penetration depth are continuously monitored. The test produces a load–displacement curve, commonly called the P–h curve (Figure 2 (a)), which captures the elastic and plastic response of the material at the nanoscale.
-Unlike conventional hardness tests, where only the residual impression is measured after unloading, nanoindentation determines properties directly from the entire loading–unloading response. As a result, both hardness and elastic modulus can be obtained from a single indentation cycle without imaging the indent.
-
+Nanoindentation is a depth-sensing mechanical testing technique in which a sharp diamond indenter (we are using Berkovich indenter) is pressed into the surface of a material while both the applied load and the penetration depth are continuously monitored. The test produces a load–displacement curve, commonly called the P–h curve (Figure 2 (a)), which captures the elastic and plastic response of the material at the nanoscale.<br>
+Unlike conventional hardness tests, where only the residual impression is measured after unloading, nanoindentation determines properties directly from the entire loading–unloading response. As a result, both hardness and elastic modulus can be obtained from a single indentation cycle without imaging the indent.<br>
 #### Load–Displacement Response and Its Interpretation
-A typical nanoindentation experiment consists of three stages (Figure 2a and 2b):
-##### Loading stage:
-The indenter penetrates the surface as the load increases. Both elastic and plastic deformation occur.
-##### Hold segment (optional):
-The load is maintained at its maximum value to study time-dependent deformation such as creep or viscoelastic effects.
-##### Unloading stage:
-The load is gradually removed. The initial part of this segment is assumed to be primarily elastic and is used to determine the elastic stiffness of the material.
-The deepest penetration reached during loading is denoted as the maximum depth, h<sub>max</sub>.
+A typical nanoindentation experiment consists of three stages (Figure 2a and 2b):<br>
+##### Loading stage:<br>
+The indenter penetrates the surface as the load increases. Both elastic and plastic deformation occur.<br>
+##### Hold segment (optional):<br>
+The load is maintained at its maximum value to study time-dependent deformation such as creep or viscoelastic effects.<br>
+##### Unloading stage:<br>
+The load is gradually removed. The initial part of this segment is assumed to be primarily elastic and is used to determine the elastic stiffness of the material.<br>
+The deepest penetration reached during loading is denoted as the maximum depth, h<sub>max</sub>.<br>
 
-<img src="images/Picture2.png" width="500">
+<img src="images/Picture2.png" width="500"><br>
 
-Figure 2: (a) The load vs displacement (p-h) curve indicating loading, hold and unloading stages during a typical nanoindentation experiment. (b) A schematic demonstrating h<sub>max</sub>, h<sub>c</sub>, A<sub>c</sub>
+Figure 2: (a) The load vs displacement (p-h) curve indicating loading, hold and unloading stages during a typical nanoindentation experiment. (b) A schematic demonstrating h<sub>max</sub>, h<sub>c</sub>, A<sub>c</sub><br>
 
-
-
-## Contact Mechanics and Depth Parameters
-To extract meaningful properties, it is necessary to distinguish between different measures of indentation depth.
+## Contact Mechanics and Depth Parameters<br>
+To extract meaningful properties, it is necessary to distinguish between different measures of indentation depth.<br>
 
 - h<sub>max</sub>: maximum penetration depth at peak load  
 - h<sub>c</sub>: contact depth, representing the actual depth of contact between the indenter and the material  
@@ -41,10 +36,7 @@ The contact depth is calculated as:
 
 h<sub>c</sub> = h<sub>max</sub> − ε (P<sub>max</sub> / S)
 
-
-
-
-Where, Where,
+Where,
 
 - P<sub>max</sub> = maximum applied load  
 - S = (dP/dh)<sub>unload</sub> = unloading stiffness (slope of the initial unloading curve)  
@@ -52,7 +44,6 @@ Where, Where,
 
 <b>Assumption:</b>  
 The initial unloading response is purely elastic and follows linear elastic contact mechanics.
-
 
 ### Projected Contact Area
 The projected contact area A<sub>c</sub> is the area of material actually in contact with the indenter at peak load.
