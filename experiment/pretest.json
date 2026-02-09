@@ -2,71 +2,71 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "A material shows a high value of H/E. This primarily indicates:",
+      "question": "What is the primary quantity directly recorded during a nanoindentation experiment?",
       "answers": {
-        "a": "High plastic deformation",
-        "b": "High elastic recovery",
-        "c": "High thermal conductivity",
-        "d": "High surface roughness"
+        "a": "Residual indent diameter",
+        "b": "Surface roughness",
+        "c": "Load and penetration depth",
+        "d": "Wear volume"
       },
       "explanations": {
-        "a": "Incorrect: High plastic deformation corresponds to low H/E.",
-        "b": "Correct: High H/E indicates greater elastic recovery and resistance to crack initiation.",
-        "c": "Incorrect: H/E is unrelated to thermal properties.",
-        "d": "Incorrect: H/E has no relation to surface roughness."
+        "a": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "b": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "c": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "d": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which part of the load–displacement curve is mainly used to calculate the elastic modulus?",
+      "answers": {
+        "a": "Entire loading curve",
+        "b": "Hold segment",
+        "c": "Initial unloading slope",
+        "d": "Final residual depth"
+      },
+      "explanations": {
+        "a": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "b": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "c": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "d": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Nanoindentation hardness is defined as:",
+      "answers": {
+        "a": "Load divided by indentation depth",
+        "b": "Load divided by projected contact area",
+        "c": "Depth divided by load",
+        "d": "Stiffness divided by load"
+      },
+      "explanations": {
+        "a": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "b": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "c": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "d": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "If the unloading stiffness S increases while all other parameters remain constant, the calculated modulus will:",
+      "question": "Why is nanoindentation particularly useful for thin films and coatings?",
       "answers": {
-        "a": "Decrease",
-        "b": "Increase",
-        "c": "Remain unchanged",
-        "d": "Become zero"
+        "a": "It requires large samples",
+        "b": "It measures only elastic behavior",
+        "c": "It allows very shallow, localized testing",
+        "d": "It produces large visible indents"
       },
       "explanations": {
-        "a": "Incorrect: Higher stiffness means higher modulus.",
-        "b": "Correct: E_r ∝ S. Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
-        "c": "Incorrect: Stiffness directly influences modulus.",
-        "d": "Incorrect: Modulus cannot become zero when there is measurable stiffness."
+        "a": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "b": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "c": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "d": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference."
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Two materials have the same hardness. Material A has lower modulus than Material B. Which will likely show better wear resistance?",
-      "answers": {
-        "a": "Material A",
-        "b": "Material B",
-        "c": "Both same",
-        "d": "Cannot be predicted"
-      },
-      "explanations": {
-        "a": "Correct: Lower modulus indicates higher H/E and H³/E². Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
-        "b": "Incorrect: Higher modulus leads to lower elastic recovery, making it more prone to wear.",
-        "c": "Incorrect: Their wear resistance will differ based on modulus.",
-        "d": "Incorrect: Prediction is possible from H/E and H³/E² ratios."
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Which parameter is most directly related to resistance against plastic ploughing during sliding wear?",
-      "answers": {
-        "a": "Elastic modulus E",
-        "b": "Maximum load Pmax",
-        "c": "Contact depth hc",
-        "d": "H³/E²"
-      },
-      "explanations": {
-        "a": "Incorrect: Modulus alone does not determine ploughing resistance.",
-        "b": "Incorrect: Load is only an experimental input, not a material property.",
-        "c": "Incorrect: Contact depth is an indentation geometry parameter.",
-        "d": "Correct: H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear."
-      },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
