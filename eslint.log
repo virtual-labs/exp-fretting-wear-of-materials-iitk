@@ -1,0 +1,29 @@
+
+/home/runner/work/exp-nanoindentation-measurement-iitk/exp-nanoindentation-measurement-iitk/experiment/simulation/js/main.js
+    1:10  warning  'openProcedure' is defined but never used           no-unused-vars
+    5:10  warning  'closeProcedure' is defined but never used          no-unused-vars
+    8:10  warning  'resetExperiment' is defined but never used         no-unused-vars
+   25:5   warning  'holdProgress' is assigned a value but never used   no-unused-vars
+   44:5   warning  'pointer' is assigned a value but never used        no-unused-vars
+   45:10  warning  'display2d' is defined but never used               no-unused-vars
+   46:11  warning  'holdingtime' is assigned a value but never used    no-unused-vars
+  140:5   warning  'holdDelayDone' is assigned a value but never used  no-unused-vars
+  142:7   warning  'loadSteps' is assigned a value but never used      no-unused-vars
+  143:7   warning  'unloadSteps' is assigned a value but never used    no-unused-vars
+  185:34  warning  'timestamp' is defined but never used               no-unused-vars
+  313:10  warning  'movedown' is defined but never used                no-unused-vars
+  339:5   warning  'pointerY' is assigned a value but never used       no-unused-vars
+  346:10  warning  'autoMovePointerUp' is defined but never used       no-unused-vars
+  376:10  warning  'display3d' is defined but never used               no-unused-vars
+  436:10  warning  'showformula' is defined but never used             no-unused-vars
+  440:10  warning  'closeFormula' is defined but never used            no-unused-vars
+  509:10  warning  'textar' is defined but never used                  no-unused-vars
+  539:10  warning  'submitIndent' is defined but never used            no-unused-vars
+  575:10  warning  'showMaterialOptions' is defined but never used     no-unused-vars
+  598:10  warning  'showResult' is defined but never used              no-unused-vars
+  603:10  warning  'closeResult' is defined but never used             no-unused-vars
+  614:10  warning  'showConclusion' is defined but never used          no-unused-vars
+  617:10  warning  'closeConclusion' is defined but never used         no-unused-vars
+
+✖ 24 problems (0 errors, 24 warnings)
+

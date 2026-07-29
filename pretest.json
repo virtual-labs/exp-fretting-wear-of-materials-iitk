@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary quantity directly recorded during a nanoindentation experiment?",
+      "answers": {
+        "a": "Residual indent diameter",
+        "b": "Surface roughness",
+        "c": "Load and penetration depth",
+        "d": "Wear volume"
+      },
+      "explanations": {
+        "a": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "b": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "c": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve.",
+        "d": "Instrumented nanoindentation continuously measures applied load (P) and penetration depth (h) during loading and unloading. All mechanical properties are extracted from the resulting load–displacement curve."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which part of the load–displacement curve is mainly used to calculate the elastic modulus?",
+      "answers": {
+        "a": "Entire loading curve",
+        "b": "Hold segment",
+        "c": "Initial unloading slope",
+        "d": "Final residual depth"
+      },
+      "explanations": {
+        "a": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "b": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "c": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus.",
+        "d": "The initial unloading slope (stiffness, S=dP/dh) is assumed to represent elastic recovery and is used in the Oliver–Pharr method to determine the elastic modulus."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Nanoindentation hardness is defined as:",
+      "answers": {
+        "a": "Load divided by indentation depth",
+        "b": "Load divided by projected contact area",
+        "c": "Depth divided by load",
+        "d": "Stiffness divided by load"
+      },
+      "explanations": {
+        "a": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "b": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "c": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation.",
+        "d": "Hardness is the mean contact pressure under the indenter, H=P<sub>max</sub>/A<sub>c</sub>. It represents resistance to plastic deformation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is nanoindentation particularly useful for thin films and coatings?",
+      "answers": {
+        "a": "It requires large samples",
+        "b": "It measures only elastic behavior",
+        "c": "It allows very shallow, localized testing",
+        "d": "It produces large visible indents"
+      },
+      "explanations": {
+        "a": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "b": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "c": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference.",
+        "d": "Nanoindentation applies very small loads and shallow penetration depths, making it ideal for measuring properties of thin films and coatings without substrate interference."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
