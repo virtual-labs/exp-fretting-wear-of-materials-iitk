@@ -77,7 +77,7 @@ Physically, hardness represents the material’s resistance to permanent (plasti
 ### Contact Stiffness
 
 Contact stiffness is defined as the slope of the unloading curve at the maximum indentation depth:<br>
-S=├ dP/dh∣_(h=h<sub>max </sub>)<br>
+<img src="images/Picture3.png"><br>
 where:<br>
 	S= contact stiffness (N/m or mN/µm) <br>
 	P= indentation load <br>
