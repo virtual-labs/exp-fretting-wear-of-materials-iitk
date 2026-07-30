@@ -2,37 +2,71 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A material shows a high value of H/E. This primarily indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "High plastic deformation",
+        "b": "High elastic recovery",
+        "c": "High thermal conductivity",
+        "d": "High surface roughness"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "H/E∼ elastic strain capacity, Higher values mean the material deforms elastically and recovers after contact, reducing permanent damage and improving wear resistance.",
+        "b": "H/E∼ elastic strain capacity, Higher values mean the material deforms elastically and recovers after contact, reducing permanent damage and improving wear resistance.",
+        "c": "H/E∼ elastic strain capacity, Higher values mean the material deforms elastically and recovers after contact, reducing permanent damage and improving wear resistance.",
+        "d": "H/E∼ elastic strain capacity, Higher values mean the material deforms elastically and recovers after contact, reducing permanent damage and improving wear resistance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the unloading stiffness S increases while all other parameters remain constant, the calculated modulus will:",
+      "answers": {
+        "a": "Decrease",
+        "b": "Increase",
+        "c": "Remain unchanged",
+        "d": "Become zero"
+      },
+      "explanations": {
+        "a": "E<sub>r</sub> ∝ S, Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
+        "b": "E<sub>r</sub> ∝ S, Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
+        "c": "E<sub>r</sub> ∝ S, Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation.",
+        "d": "E<sub>r</sub> ∝ S, Higher stiffness corresponds to higher elastic modulus, meaning the material is stiffer and offers greater resistance to elastic deformation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Two materials have the same hardness. Material A has lower modulus than Material B. Which will likely show better wear resistance?",
+      "answers": {
+        "a": "Material A",
+        "b": "Material B",
+        "c": "Both same",
+        "d": "Cannot be predicted"
+      },
+      "explanations": {
+        "a": "Lower modulus indicates higher H/E and H³/E², Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
+        "b": "Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
+        "c": "Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance.",
+        "d": "Material A will exhibit greater elastic recovery and smaller plastic zones, leading to improved wear resistance."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which parameter is most directly related to resistance against plastic ploughing during sliding wear?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "H",
+        "b": "E",
+        "c": "H/E",
+        "d": "H³/E²"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear.",
+        "b": "H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear.",
+        "c": "H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear.",
+        "d": "H³/E² quantifies resistance to plastic deformation and plastic zone size. Higher values reduce ploughing and debris formation, directly lowering wear."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
